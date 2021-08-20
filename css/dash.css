@@ -1,0 +1,857 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+/*   .entry__title   */
+/*   not used   */
+/*   .entry__input   */
+/*   .entry__link   */
+/*   .entry__link:hover   */
+/*   .entry__btn   */
+/*   .entry__btn:hover   */
+/*   .select   */
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-LightItalic.eot");
+  src: local("SF UI Text LightItalic"), local("SFUIText-LightItalic"), url("../fonts/SFUIText-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-LightItalic.woff2") format("woff2"), url("../fonts/SFUIText-LightItalic.woff") format("woff"), url("../fonts/SFUIText-LightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Regular.eot");
+  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Regular.woff2") format("woff2"), url("SFUIDisplay-Regular.woff") format("woff"), url("SFUIDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-RegularItalic.eot");
+  src: local("SF UI Text Regular Italic"), local("SFUIText-RegularItalic"), url("../fonts/SFUIText-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-RegularItalic.woff2") format("woff2"), url("../fonts/SFUIText-RegularItalic.woff") format("woff"), url("../fonts/SFUIText-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Ultralight.eot");
+  src: local("SF UI Display Ultralight"), local("SFUIDisplay-Ultralight"), url("SFUIDisplay-Ultralight.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Ultralight.woff2") format("woff2"), url("SFUIDisplay-Ultralight.woff") format("woff"), url("SFUIDisplay-Ultralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-SemiboldItalic.eot");
+  src: local("SF UI Text SemiboldItalic"), local("SFUIText-SemiboldItalic"), url("../fonts/SFUIText-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-SemiboldItalic.woff2") format("woff2"), url("../fonts/SFUIText-SemiboldItalic.woff") format("woff"), url("../fonts/SFUIText-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Heavy.eot");
+  src: local("SF UI Display Heavy"), local("SFUIDisplay-Heavy"), url("SFUIDisplay-Heavy.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Heavy.woff2") format("woff2"), url("SFUIDisplay-Heavy.woff") format("woff"), url("SFUIDisplay-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-Heavy.eot");
+  src: local("SF UI Text Heavy"), local("SFUIText-Heavy"), url("../fonts/SFUIText-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Heavy.woff2") format("woff2"), url("../fonts/SFUIText-Heavy.woff") format("woff"), url("../fonts/SFUIText-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Black.eot");
+  src: local("SF UI Display Black"), local("SFUIDisplay-Black"), url("SFUIDisplay-Black.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Black.woff2") format("woff2"), url("SFUIDisplay-Black.woff") format("woff"), url("SFUIDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-Semibold.eot");
+  src: local("SF UI Text Semibold"), local("SFUIText-Semibold"), url("../fonts/SFUIText-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Semibold.woff2") format("woff2"), url("../fonts/SFUIText-Semibold.woff") format("woff"), url("../fonts/SFUIText-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Semibold.eot");
+  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"), url("SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Semibold.woff2") format("woff2"), url("SFUIDisplay-Semibold.woff") format("woff"), url("SFUIDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-Medium.eot");
+  src: local("SF UI Text Medium"), local("SFUIText-Medium"), url("../fonts/SFUIText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Medium.woff2") format("woff2"), url("../fonts/SFUIText-Medium.woff") format("woff"), url("../fonts/SFUIText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-Light.eot");
+  src: local("SF UI Text Light"), local("SFUIText-Light"), url("../fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Light.woff2") format("woff2"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Bold.eot");
+  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Bold.woff2") format("woff2"), url("SFUIDisplay-Bold.woff") format("woff"), url("SFUIDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-Regular.eot");
+  src: local("SF UI Text Regular"), local("SFUIText-Regular"), url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Regular.woff2") format("woff2"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Thin.eot");
+  src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"), url("SFUIDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Thin.woff2") format("woff2"), url("SFUIDisplay-Thin.woff") format("woff"), url("SFUIDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-BoldItalic.eot");
+  src: local("SF UI Text BoldItalic"), local("SFUIText-BoldItalic"), url("../fonts/SFUIText-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-BoldItalic.woff2") format("woff2"), url("../fonts/SFUIText-BoldItalic.woff") format("woff"), url("../fonts/SFUIText-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-Bold.eot");
+  src: local("SF UI Text Bold"), local("SFUIText-Bold"), url("../fonts/SFUIText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Bold.woff2") format("woff2"), url("../fonts/SFUIText-Bold.woff") format("woff"), url("../fonts/SFUIText-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Medium.eot");
+  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"), url("SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Medium.woff2") format("woff2"), url("SFUIDisplay-Medium.woff") format("woff"), url("SFUIDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-HeavyItalic.eot");
+  src: local("SF UI Text HeavyItalic"), local("SFUIText-HeavyItalic"), url("../fonts/SFUIText-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-HeavyItalic.woff2") format("woff2"), url("../fonts/SFUIText-HeavyItalic.woff") format("woff"), url("../fonts/SFUIText-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("SFUIDisplay-Light.eot");
+  src: local("SF UI Display Light"), local("SFUIDisplay-Light"), url("SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Light.woff2") format("woff2"), url("SFUIDisplay-Light.woff") format("woff"), url("SFUIDisplay-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../fonts/SFUIText-MediumItalic.eot");
+  src: local("SF UI Text MediumItalic"), local("SFUIText-MediumItalic"), url("../fonts/SFUIText-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-MediumItalic.woff2") format("woff2"), url("../fonts/SFUIText-MediumItalic.woff") format("woff"), url("../fonts/SFUIText-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  font-family: "SF UI Text";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: "SF UI Text";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 23px 40px 16px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 6px 2px -4px rgba(114, 114, 114, 0.473);
+          box-shadow: 0 6px 2px -4px rgba(114, 114, 114, 0.473);
+}
+
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.logo__header {
+  max-width: 170px;
+  max-height: 50px;
+}
+
+.logo__header img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 40px 0px 0px;
+}
+
+.nav__link {
+  text-transform: uppercase;
+}
+
+.__select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 230px;
+  height: 40px;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.__select[data-state="active"] .__select__title::before {
+  -webkit-transform: translate(-3px, -50%) rotate(-45deg);
+          transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.__select[data-state="active"] .__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(45deg);
+          transform: translate(3px, -50%) rotate(45deg);
+}
+
+.__select[data-state="active"] .__select__content {
+  border-width: 1px;
+  border-color: #c7ccd1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.__select[data-state="active"] .__select__label {
+  max-height: 40px;
+  border-width: 1px;
+}
+
+.__select[data-state="active"] .__select__label::before {
+  opacity: 1;
+}
+
+.__select__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: solid 1px #eef2f9;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.__select__title::before, .__select__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #333333;
+  -webkit-transform: translate(-3px, -50%) rotate(45deg);
+          transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(-45deg);
+          transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.__select__title:hover {
+  border-color: #eef2f9;
+}
+
+.__select__title:hover::before, .__select__title:hover::after {
+  background-color: #c7ccd160;
+}
+
+.__select__content {
+  position: absolute;
+  top: 40px;
+  left: 3px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 6px);
+  background-color: #ffffff;
+  border: 1px solid rgba(199, 204, 209, 0);
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 1;
+}
+
+.__select__input {
+  display: none;
+  pointer-events: none;
+}
+
+.__select__input:checked + label {
+  background-color: #dedede;
+}
+
+.__select__input:checked + label::after {
+  content: attr(data-value);
+}
+
+.__select__input:disabled + label {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.__select__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.__select__label + input + .__select__label {
+  border-top: 0 solid #c7ccd160;
+}
+
+.__select__label:hover {
+  background-color: #c7ccd160;
+  color: #ffffff;
+}
+
+.__select__label::before {
+  content: attr(data-value);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+
+.__select__label::after {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #333333;
+  z-index: -1;
+}
+
+.profile {
+  max-width: 130px;
+  position: relative;
+  text-align: right;
+  margin: 0px 0px 0px 60px;
+  padding: 0px 20px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.profile::before, .profile::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  display: block;
+  width: 5px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #afbbcb;
+  -webkit-transform: translate(-3px, -50%) rotate(45deg);
+          transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.profile::after {
+  -webkit-transform: translate(0px, -50%) rotate(-45deg);
+          transform: translate(0px, -50%) rotate(-45deg);
+}
+
+.profile__name {
+  color: #4a75cb;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+.__select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 230px;
+  height: 40px;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.__select[data-state="active"] .__select__title::before {
+  -webkit-transform: translate(-3px, -50%) rotate(-45deg);
+          transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.__select[data-state="active"] .__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(45deg);
+          transform: translate(3px, -50%) rotate(45deg);
+}
+
+.__select[data-state="active"] .__select__content {
+  border-width: 1px;
+  border-color: #c7ccd1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.__select[data-state="active"] .__select__label {
+  max-height: 40px;
+  border-width: 1px;
+}
+
+.__select[data-state="active"] .__select__label::before {
+  opacity: 1;
+}
+
+.__select__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: solid 1px #eef2f9;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.__select__title::before, .__select__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #333333;
+  -webkit-transform: translate(-3px, -50%) rotate(45deg);
+          transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(-45deg);
+          transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.__select__title:hover {
+  border-color: #eef2f9;
+}
+
+.__select__title:hover::before, .__select__title:hover::after {
+  background-color: #c7ccd160;
+}
+
+.__select__content {
+  position: absolute;
+  top: 40px;
+  left: 3px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 6px);
+  background-color: #ffffff;
+  border: 1px solid rgba(199, 204, 209, 0);
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 1;
+}
+
+.__select__input {
+  display: none;
+  pointer-events: none;
+}
+
+.__select__input:checked + label {
+  background-color: #dedede;
+}
+
+.__select__input:checked + label::after {
+  content: attr(data-value);
+}
+
+.__select__input:disabled + label {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.__select__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.__select__label + input + .__select__label {
+  border-top: 0 solid #c7ccd160;
+}
+
+.__select__label:hover {
+  background-color: #c7ccd160;
+  color: #ffffff;
+}
+
+.__select__label::before {
+  content: attr(data-value);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+
+.__select__label::after {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #333333;
+  z-index: -1;
+}
+/*# sourceMappingURL=dash.css.map */
