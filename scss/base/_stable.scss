@@ -11,6 +11,11 @@ body {
   flex-direction: column;
   height: 100%;
   flex: 1 0 auto;
+  background: $color10;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .container {
@@ -38,6 +43,9 @@ h3 {
   font-size: 24px;
 }
 h4 {
+  font-size: 16px;
+}
+h5 {
   font-size: 14px;
 }
 

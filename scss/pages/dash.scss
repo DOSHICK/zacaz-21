@@ -5,5 +5,8 @@
 @import "../utils/_fonts";
 @import "../base/_stable";
 
-@import "../layout/header";
-@import "../components/_select";
+@import "../layout/_header";
+@import "../layout/_footer";
+
+@import "../components/_info";
+@import "../components/_dash-section";
