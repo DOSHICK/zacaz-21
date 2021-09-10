@@ -1,0 +1,132 @@
+.tab input,
+.tab-content {
+  display: none;
+}
+.tab {
+  min-width: 860px;
+  max-width: 860px;
+
+  border-radius: 3px;
+  color: $color15;
+}
+.tab-title {
+  background: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color11;
+  transition: all 0.3s ease 0s;
+  padding: 15px 0px 15px 0px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 1px solid $color12;
+}
+.tab-title::after {
+  content: url("../img/arrow.svg");
+  float: right;
+  margin: 0px 20px 0px 0px;
+}
+.tab-content {
+}
+.tab :checked + .tab-title {
+  border-bottom: none;
+}
+.tab :checked + .tab-title::after {
+  content: url("../img/arrow.svg");
+  transform: rotate(180deg);
+}
+.tab :checked ~ .tab-content {
+  display: block;
+}
+
+.floor {
+  .tab {
+    .tab-title {
+    }
+  }
+}
+.tab-content {
+  tr {
+    display: inline-block;
+    margin: 10px 0px 25px 0px;
+    td:last-child {
+      margin: 0px;
+    }
+    td {
+      margin: 0px 25px 0px 0px;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
+.condition {
+  z-index: 2;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  border-radius: 2px;
+  top: 0px;
+  left: 50%;
+  color: $color0;
+  transform: translate(-50%, -50%);
+}
+.saled {
+  .condition {
+    background: $color16;
+  }
+}
+.paid-reservation {
+  .condition {
+    background: $color17;
+  }
+}
+.verbal-reservation {
+  .condition {
+    background: $color18;
+  }
+}
+.on-sale {
+  .condition {
+    background: $color13;
+  }
+}
+
+.tab__item {
+  color: $color11;
+  tr {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+
+    td {
+      padding: 11px 15px 11px 15px;
+      margin: 0px;
+      width: 100%;
+      border: 1px solid $color12;
+    }
+    td:first-child {
+      width: 75px;
+      min-width: 75px;
+    }
+    td:last-child {
+      margin: 0;
+    }
+  }
+  tr.first {
+    td {
+      padding-top: 27px;
+    }
+  }
+  background-color: $color0;
+  min-width: 190px;
+}
+.tab__info {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
+
+.deactive {
+  display: none !important;
+}

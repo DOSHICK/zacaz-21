@@ -1,0 +1,107 @@
+header {
+  flex: 0 0 auto;
+  background: $color0;
+  box-shadow: 0 6px 2px -4px $color21;
+  padding: 23px 40px 16px 40px;
+}
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__block {
+  display: flex;
+  flex-direction: row;
+}
+.logo__header {
+  max-width: 170px;
+  max-height: 50px;
+  transition: all 0.3s ease 0s;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav__item {
+  width: fit-content;
+  padding: 0px 40px 0px 0px;
+}
+a.nav__link {
+  transition: all 0.3s ease 0s;
+  display: flex;
+  flex-direction: row;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 180.53%;
+  text-transform: uppercase;
+  color: $color9;
+  .nav__counter {
+    color: $color0;
+    background: $color12;
+    border-radius: 5px;
+    padding: 0px 7px 0px 7px;
+    margin: 0px 0px 0px 7px;
+  }
+  &:hover {
+    color: $color2;
+  }
+}
+
+@import "../components/_select";
+
+.profile {
+  max-width: 130px;
+  position: relative;
+  text-align: right;
+  margin: 0px 0px 0px 60px;
+  padding: 0px 20px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    display: block;
+    width: 5px;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: $color2;
+    transform: translate(-3px, -50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(0px, -50%) rotate(-45deg);
+  }
+  &:hover {
+    .profile__name {
+      color: $color11;
+    }
+  }
+}
+.profile__name {
+  color: $color4;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-decoration: underline;
+}
+.profile__place {
+}

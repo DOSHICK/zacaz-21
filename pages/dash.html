@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/dash.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DASH</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header__wrapper container">
+          <div class="header__block">
+            <a class="logo logo__header" href="#">
+              <img src="../img/logo.png" alt="" />
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="./dash.html" class="nav__link">Дашборд</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./objects.html" class="nav__link">Объекты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./requests.html" class="nav__link"
+                    >Заявки
+                    <p class="nav__counter">345</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <form class="header__block">
+            <div class="select__wrapper">
+              <div class="select__arrow"></div>
+              <select name="name" class="select">
+                <option>ЖК Привилегия</option>
+                <option>Пункт 1</option>
+                <option>Пункт 2</option>
+              </select>
+            </div>
+            <div class="profile">
+              <p class="profile__name">Иванов Иван</p>
+              <p class="profile__place">менеджер</p>
+            </div>
+          </form>
+        </div>
+      </header>
+      <main>
+        <section class="info">
+          <div class="container">
+            <div class="info__wrapper">
+              <div class="info__block info__block_1">
+                <div class="info__img">
+                  <div class="info__text">III квартал 2023</div>
+                </div>
+                <div class="info__stats">
+                  <div class="stats__block">
+                    <h2 class="stats__title">125</h2>
+                    <p class="stats__text">квартир</p>
+                  </div>
+                  <div class="stats__block">
+                    <h2 class="stats__title">225</h2>
+                    <p class="stats__text">парковочных мест</p>
+                  </div>
+                  <div class="stats__block">
+                    <h2 class="stats__title">4</h2>
+                    <p class="stats__text">коммерческой недвижимости</p>
+                  </div>
+                </div>
+              </div>
+              <div class="info__block info__block_2">
+                <p class="info__adress">
+                  г. Казань, ул. Братьев Касимовых, 37
+                  <span> т.: +7 (843) 207-27-84 </span>
+                </p>
+                <div class="info__objects">
+                  <div class="objects__row">
+                    <p class="objects__item">Домов</p>
+                    <h4 class="objects__item">9</h4>
+                  </div>
+                  <div class="objects__row">
+                    <p class="objects__item">Объекты в продаже</p>
+                    <h4 class="objects__item">285</h4>
+                  </div>
+                  <div class="objects__row">
+                    <p class="objects__item">Объектов продано</p>
+                    <h4 class="objects__item">345</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="dash__section">
+          <div class="container">
+            <table class="dash">
+              <tr class="all_requests">
+                <td>ВСЕГО ЗАЯВОК</td>
+                <td>
+                  <p class="counter">345</p>
+                </td>
+                <td>
+                  <p class="counter">345</p>
+                </td>
+                <td>
+                  <p class="counter">345</p>
+                </td>
+                <td>
+                  <p class="counter">345</p>
+                </td>
+                <td>
+                  <p class="counter">345</p>
+                </td>
+                <td>
+                  <p class="counter">345</p>
+                </td>
+              </tr>
+              <tr class="at_work_requests">
+                <td>В РАБОТЕ</td>
+                <td>
+                  <p class="counter">220</p>
+                </td>
+                <td>
+                  <p class="counter">220</p>
+                </td>
+                <td>
+                  <p class="counter">220</p>
+                </td>
+                <td>
+                  <p class="counter">220</p>
+                </td>
+                <td>
+                  <p class="counter">220</p>
+                </td>
+                <td>
+                  <p class="counter">220</p>
+                </td>
+              </tr>
+              <tr class="performed_requests">
+                <td>ВЫПОЛНЕНО</td>
+                <td>
+                  <p class="counter">125</p>
+                </td>
+                <td>
+                  <p class="counter">125</p>
+                </td>
+                <td>
+                  <p class="counter">125</p>
+                </td>
+                <td>
+                  <p class="counter">125</p>
+                </td>
+                <td>
+                  <p class="counter">125</p>
+                </td>
+                <td>
+                  <p class="counter">125</p>
+                </td>
+              </tr>
+
+              <tr class="timeline">
+                <td></td>
+                <td>СЕГОДНЯ</td>
+                <td>ВЧЕРА</td>
+                <td>НЕДЕЛЯ</td>
+                <td>МЕСЯЦ</td>
+                <td>КВАРТАЛ</td>
+                <td>ГОД</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__block">
+              <a href="#" class="footer__link">
+                <img
+                  class="footer__logo"
+                  src="../img/logo__footer.png"
+                  alt="smy-88"
+                />
+              </a>
+              <p class="footer__text">© 2021 «СМУ-88» Все права защищены.</p>
+            </div>
+            <a href="#" class="tech">Написать в техподдержку</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/select.js"></script>
+  </body>
+</html>

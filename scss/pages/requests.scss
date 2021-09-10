@@ -1,0 +1,136 @@
+@import "../base/_reset.scss";
+@import "../base/_colors";
+@import "../utils/_variables";
+@import "../utils/_fonts";
+@import "../base/_stable";
+
+@import "../layout/_header";
+@import "../layout/_footer";
+
+@import "../components/_info";
+
+.requests {
+  width: 100%;
+  padding: 0px 0px 75px 0px;
+}
+.requests__title {
+}
+.new-requests__title {
+  margin: 15px 0px 10px 0px;
+  font-size: 24px;
+  line-height: 180.53%;
+  span {
+    margin: 0px 0px 0px 15px;
+    padding: 7px 7px 7px 7px;
+    color: $color0;
+    font-size: 16px;
+    line-height: 29px;
+    background: $color4;
+    border-radius: 5px;
+  }
+}
+.counter {
+}
+
+.sorting {
+  margin: 0px 0px 18px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sorting__block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sorting__block_1 {
+  select.select {
+    margin: 0px 0px 0px 16px;
+    min-width: 160px;
+  }
+}
+.sorting__block_2 {
+  select.select {
+    margin: 0px 0px 0px 16px;
+  }
+}
+.sorting__label {
+  font-size: 14px;
+  line-height: 180.53%;
+  margin: 0px -8px 0px 0px;
+}
+.select__wrapper {
+  .select__arrow {
+  }
+  .select {
+  }
+}
+
+.requests__block {
+  margin: 0px 0px 30px 0px;
+  background: $color0;
+  tr {
+    min-width: max-content;
+  }
+  td {
+    border: 1px solid $color12;
+    box-sizing: border-box;
+    padding: 25px 25px 25px 25px;
+    min-width: 190px;
+  }
+}
+.number {
+  .number_link {
+    color: $color4;
+    text-decoration-line: underline;
+    font-weight: 700;
+  }
+  .number__date {
+    font-size: 10px;
+    line-height: 12px;
+    margin: 7px 0px 0px 0px;
+    color: $color2;
+  }
+}
+.person {
+  width: 190px;
+  .person__name {
+  }
+  .person__adress {
+    font-size: 10px;
+    line-height: 12px;
+    color: $color2;
+  }
+}
+
+.text {
+  min-width: none;
+  p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.buttoncase {
+  width: 360px;
+  .block__btn {
+    padding: 7px 13px 7px 13px;
+    color: $color0;
+    background: $color14;
+    border-radius: 4px;
+  }
+}
+
+td.message__case {
+  width: 360px;
+  p.message__date {
+    font-size: 10px;
+    line-height: 12px;
+    margin: 7px 0px 3px 0px;
+    color: $color2;
+  }
+  p.message__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

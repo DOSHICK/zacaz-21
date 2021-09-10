@@ -1,0 +1,228 @@
+@import "../base/_reset.scss";
+@import "../base/_colors";
+@import "../utils/_variables";
+@import "../utils/_fonts";
+@import "../base/_stable";
+
+@import "../layout/_header";
+@import "../layout/_footer";
+
+@import "../components/_info";
+@import "../components/_floor";
+
+body {
+  overflow-y: scroll;
+}
+
+.objects {
+  padding: 0px 0px 50px 0px;
+}
+.objects__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sections {
+}
+.section__block {
+  margin: 0px 0px 0px 0px;
+  input {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    visibility: hidden;
+  }
+}
+.section__title {
+  margin: 0;
+  padding: 25px 20px 15px 20px;
+  background: none;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $color12;
+  cursor: pointer;
+}
+input:checked + .section__title {
+  background: $color0;
+}
+
+.section__block_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section__block_2 {
+  display: flex;
+  flex-direction: row;
+}
+.section__counter {
+  margin: 15px 10px 0px 0px;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+  color: $color0;
+}
+.counter__saled {
+  background: $color16;
+}
+.counter__paid-reservation {
+  background: $color17;
+}
+.counter__verbal-reservation {
+  background: $color18;
+}
+.counter__on-sale {
+  background: $color13;
+}
+
+.objects__find {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.objects__filter {
+  display: flex;
+  flex-direction: row;
+  .filter__title {
+    margin: 0px 15px 0px 0px;
+  }
+  input {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -100%;
+  }
+  label {
+    margin: 0px 15px 0px 0px;
+  }
+  input:checked + .objects__wrapper__filter__label {
+    background: url("../img/sqrs-act.svg");
+  }
+  .objects__wrapper__filter__label {
+    display: block;
+    background: url("../img/sqrs-dis.svg");
+    width: 36px;
+    height: 14.65px;
+  }
+  input:checked + .objects__table__filter__label {
+    background: url("../img/lines-act.svg");
+  }
+  .objects__table__filter__label {
+    display: block;
+    width: 21px;
+    height: 17px;
+    background: url("../img/lines-dis.svg");
+  }
+}
+
+.filter__selects {
+  display: flex;
+  flex-direction: row;
+  .select__wrapper {
+    margin: 0px 15px 0px 0px;
+  }
+  .select__arrow {
+    background: url("../img/arrow__header.svg");
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+  .select {
+    border-radius: 3px;
+    background: $color19;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 5px 14px;
+    width: 220px;
+  }
+  .filter__btn {
+    font-size: 14px;
+    padding: 0px 35px 0px 35px;
+    line-height: 50px;
+    background: $color20;
+    border-radius: 3px;
+  }
+}
+
+.objects__table {
+  table {
+    tr {
+      width: 100%;
+      td {
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 50px;
+        padding: 10px 20px 18px 20px;
+        border: 1px solid $color12;
+      }
+      td.id-number {
+        width: 95px;
+      }
+      td.plan {
+        width: 95px;
+      }
+      td.rooms {
+        width: 95px;
+      }
+      td.area {
+        width: 95px;
+      }
+      td.adress {
+        min-width: 210px;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      td.bs {
+        width: 75px;
+      }
+      td.floor {
+        width: 95px;
+      }
+      td.sale-type {
+        width: 140px;
+      }
+      td.stage {
+        width: 95px;
+      }
+      td.price {
+        min-width: 124px;
+      }
+    }
+    tr.table__legend {
+      td {
+        padding: 0px 0px 0px 0px;
+        font-size: 10px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color2;
+        border: none;
+      }
+    }
+  }
+}
+
+.id-number {
+}
+.plan {
+}
+.rooms {
+}
+.area {
+}
+.adress {
+}
+.bs {
+}
+.floor {
+}
+.sale-type {
+}
+.stage {
+}
+.price {
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/requests-pages.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REQUESTS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header__wrapper container">
+          <div class="header__block">
+            <a class="logo logo__header" href="#">
+              <img src="../img/logo.png" alt="" />
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="./dash.html" class="nav__link">Дашборд</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./objects.html" class="nav__link">Объекты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./requests.html" class="nav__link"
+                    >Заявки
+                    <p class="nav__counter">345</p></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <form class="header__block">
+            <div class="select__wrapper">
+              <div class="select__arrow"></div>
+              <select name="name" class="select">
+                <option>ЖК Привилегия</option>
+                <option>Пункт 1</option>
+                <option>Пункт 2</option>
+              </select>
+            </div>
+
+            <div class="profile">
+              <p class="profile__name">Иванов Иван</p>
+              <p class="profile__place">менеджер</p>
+            </div>
+          </form>
+        </div>
+      </header>
+      <main>
+        <section class="bread-crumbs">
+          <div class="container">
+            <p>
+              <a href="./dash.html">ЖК Привилегия</a> >
+              <a href="./requests.html">Заявки</a>
+            </p>
+          </div>
+        </section>
+        <section class="request-block">
+          <div class="container">
+            <h1 class="request-block__title">Заявка №345</h1>
+            <div class="request-block__info">
+              <div class="request-block__info-item">
+                <img src="../img/marker.svg" alt="marker" />
+                <p class="request-block__text">
+                  ЖК Привилегия, ул. Ленина, д.126, кв.7
+                </p>
+              </div>
+              <div class="request-block__info-item">
+                <img src="../img/person.svg" alt="marker" />
+                <a href="#" class="request-block__text">
+                  Крымов <br />
+                  Пётр
+                </a>
+              </div>
+              <div class="request-block__info-item">
+                <img src="../img/clock.svg" alt="marker" />
+                <p class="request-block__text">12 июля 2021</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="description">
+          <div class="container">
+            <img class="description__img" src="../img/inter.png" alt="" />
+            <p class="description__text">
+              Задача организации, в особенности же рамки и место обучения кадров
+              играет важную роль в формировании существенных финансовых и
+              административных условий. Повседневная практика показывает, что
+              постоянный количественный рост и сфера нашей активности
+              способствует подготовки и реализации модели развития. С другой
+              стороны реализация намеченных плановых заданий в значительной
+              степени обуславливает создание модели развития. Значимость этих
+              проблем настолько очевидна, что дальнейшее развитие различных форм
+              деятельности позволяет оценить значение направлений прогрессивного
+              развития. Повседневная практика показывает, что рамки и место
+              обучения кадров требуют определения и уточнения модели развития.
+            </p>
+          </div>
+        </section>
+        <section class="review">
+          <div class="container">
+            <div class="rewiew__list">
+              <div class="rewiew__item">
+                <p class="rewiew__text">
+                  Имеется спорная точка зрения, гласящая примерно следующее:
+                  базовые сценарии поведения пользователей, инициированные
+                  исключительно синтетически, обнародованы.
+                </p>
+                <a href="#" class="rewiew__name">Иванов Иван</a>
+                <p class="rewiew__date">12 июля 2021</p>
+              </div>
+              <div class="rewiew__item">
+                <p class="rewiew__text">
+                  В частности, экономическая повестка сегодняшнего дня
+                  обеспечивает актуальность приоритизации разума над эмоциями.
+                </p>
+                <a href="#" class="rewiew__name">Христорождественская Анна</a>
+                <p class="rewiew__date">13 июля 2021</p>
+              </div>
+              <div class="rewiew__item">
+                <p class="rewiew__text">
+                  Разнообразный и богатый опыт говорит нам, что
+                  социально-экономическое развитие представляет собой интересный
+                  эксперимент проверки переосмысления внешнеэкономических
+                  политик.
+                </p>
+                <a href="#" class="rewiew__name">Иванов Иван</a>
+                <p class="rewiew__date">14 июля 2021</p>
+              </div>
+            </div>
+            <form class="rewiew__form">
+              <textarea
+                class="rewiew__textarea"
+                name="message"
+                id="message"
+                placeholder="Напишите сообщение"
+              ></textarea>
+              <button class="rewiew__btn">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__block">
+              <a href="#" class="footer__link">
+                <img
+                  class="footer__logo"
+                  src="../img/logo__footer.png"
+                  alt="smy-88"
+                />
+              </a>
+              <p class="footer__text">© 2021 «СМУ-88» Все права защищены.</p>
+            </div>
+            <a href="#" class="tech">Написать в техподдержку</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script defer src="../js/select.js"></script>
+  </body>
+</html>

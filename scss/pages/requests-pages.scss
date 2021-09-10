@@ -1,0 +1,115 @@
+@import "../base/_reset.scss";
+@import "../base/_colors";
+@import "../utils/_variables";
+@import "../utils/_fonts";
+@import "../base/_stable";
+
+@import "../layout/_header";
+@import "../layout/_footer";
+
+.request-block {
+}
+.request-block__title {
+}
+.request-block__info {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  .request-block__info-item {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px 0px 0px;
+    img {
+      max-width: 17px;
+      max-height: 17px;
+      margin: 0px 10px 0px 0px;
+    }
+    a.request-block__text {
+      color: $color4;
+      text-decoration: underline;
+    }
+    .request-block__text {
+      font-size: 14px;
+      line-height: 160.53%;
+      min-width: 100px;
+      max-width: 170px;
+    }
+  }
+}
+
+.description {
+  padding: 35px 0px 25px 0px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.description__img {
+  width: 455px;
+  height: 304px;
+}
+.description__text {
+  margin: 0px 0px 0px 20px;
+  font-size: 16px;
+  line-height: 142.03%;
+}
+
+.review {
+  padding: 0px 0px 40px 0px;
+}
+.rewiew__list {
+}
+.rewiew__item {
+  max-width: 930px;
+  margin: 0px 0px 12px 0px;
+  padding: 20px 24px 15px 24px;
+  background: $color0;
+  border: 1px solid $color12;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.rewiew__text {
+  width: 825px;
+  font-size: 16px;
+  line-height: 142.03%;
+  margin: 0px 0px 5px 0px;
+}
+a.rewiew__name {
+  color: $color4;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  &:hover {
+    color: $color11;
+  }
+}
+.rewiew__date {
+  font-size: 14px;
+  line-height: 160.53%;
+  color: $color2;
+}
+
+.rewiew__form {
+  display: flex;
+  flex-direction: column;
+}
+.rewiew__textarea {
+  font-family: "SF UI Text";
+  width: 740px;
+  height: 105px;
+  padding: 22px 22px 22px 22px;
+  background: $color19;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.rewiew__btn {
+  color: $color9;
+  background: $color20;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 15px 0px 0px 0px;
+  padding: 20px 30px 20px 30px;
+  width: fit-content;
+}

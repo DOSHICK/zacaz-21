@@ -1,0 +1,64 @@
+.rotate {
+  transform: translateX(-10px) rotate(180deg);
+}
+
+header {
+  .select__wrapper {
+    .select__arrow {
+      background: url("../img/arrow__header.svg") no-repeat;
+      min-width: 20px;
+      height: 20px;
+      top: 16px;
+      right: 15px;
+    }
+    select {
+      width: 275px;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: $color2;
+      option {
+        color: $color9;
+      }
+    }
+  }
+}
+
+.select__wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.select__arrow {
+  transition: all 0.3s ease 0s;
+  z-index: 2;
+  position: absolute;
+  min-width: 10px;
+  height: 10px;
+  top: 12px;
+  right: 10px;
+  background: url("../img/arrow.svg") no-repeat;
+}
+
+select.select {
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 15px 20px 15px 20px;
+  background: $color8;
+  background-position: center right;
+  border-radius: 7px;
+  min-width: 100px;
+  border: none;
+  outline: none;
+  appearance: none;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: $color11;
+}
+
+section {
+  select.select {
+    padding: 10px;
+  }
+}

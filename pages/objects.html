@@ -1,0 +1,3823 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/objects.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBJECTS</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header__wrapper container">
+          <div class="header__block">
+            <a class="logo logo__header" href="#">
+              <img src="../img/logo.png" alt="" />
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="./dash.html" class="nav__link">Дашборд</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./objects.html" class="nav__link">Объекты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./requests.html" class="nav__link"
+                    >Заявки
+                    <p class="nav__counter">345</p></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <form class="header__block">
+            <div class="select__wrapper">
+              <div class="select__arrow"></div>
+              <select name="name" class="select">
+                <option>ЖК Привилегия</option>
+                <option>Пункт 1</option>
+                <option>Пункт 2</option>
+              </select>
+            </div>
+
+            <div class="profile">
+              <p class="profile__name">Иванов Иван</p>
+              <p class="profile__place">менеджер</p>
+            </div>
+          </form>
+        </div>
+      </header>
+      <main>
+        <section class="info">
+          <div class="container">
+            <div class="info__wrapper">
+              <div class="info__block info__block_1">
+                <div class="info__img">
+                  <div class="info__text">III квартал 2023</div>
+                </div>
+                <div class="info__stats">
+                  <div class="stats__block">
+                    <h2 class="stats__title">125</h2>
+                    <p class="stats__text">квартир</p>
+                  </div>
+                  <div class="stats__block">
+                    <h2 class="stats__title">225</h2>
+                    <p class="stats__text">парковочных мест</p>
+                  </div>
+                  <div class="stats__block">
+                    <h2 class="stats__title">4</h2>
+                    <p class="stats__text">коммерческой недвижимости</p>
+                  </div>
+                </div>
+              </div>
+              <div class="info__block info__block_2">
+                <p class="info__adress">
+                  г. Казань, ул. Братьев Касимовых, 37
+                  <span> т.: +7 (843) 207-27-84 </span>
+                </p>
+                <div class="info__objects">
+                  <div class="objects__row">
+                    <p class="objects__item">Домов</p>
+                    <h4 class="objects__item">9</h4>
+                  </div>
+                  <div class="objects__row">
+                    <p class="objects__item">Объекты в продаже</p>
+                    <h4 class="objects__item">285</h4>
+                  </div>
+                  <div class="objects__row">
+                    <p class="objects__item">Объектов продано</p>
+                    <h4 class="objects__item">345</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="objects container">
+          <div class="objects__find">
+            <!-- Фильтр -->
+            <div class="objects__filter">
+              <p class="filter__title">Вид</p>
+              <input
+                type="radio"
+                value="objects__wrapper"
+                id="objects__wrapper__filter"
+                name="filter__group"
+                checked
+              />
+              <label
+                class="objects__wrapper__filter__label"
+                for="objects__wrapper__filter"
+              ></label>
+              <input
+                type="radio"
+                value="objects__table"
+                id="objects__table__filter"
+                name="filter__group"
+              />
+              <label
+                class="objects__table__filter__label"
+                for="objects__table__filter"
+              ></label>
+            </div>
+            <!-- Селекты -->
+            <div class="filter__selects">
+              <div class="select__wrapper">
+                <div class="select__arrow"></div>
+                <select name="name" class="select">
+                  <option>Выбрать все</option>
+                  <option>Пункт 1</option>
+                  <option>Пункт 2</option>
+                </select>
+              </div>
+              <div class="select__wrapper">
+                <div class="select__arrow"></div>
+                <select name="name" class="select">
+                  <option>Все объекты</option>
+                  <option>Пункт 1</option>
+                  <option>Пункт 2</option>
+                </select>
+              </div>
+              <div class="select__wrapper">
+                <div class="select__arrow"></div>
+                <select name="name" class="select">
+                  <option>Все цены</option>
+                  <option>Пункт 1</option>
+                  <option>Пункт 2</option>
+                </select>
+              </div>
+              <button class="filter__btn">Показать</button>
+            </div>
+          </div>
+          <!-- Красивый вид данных -->
+          <div class="filter objects__wrapper" id="objects__wrapper">
+            <div class="sections">
+              <div class="section__block">
+                <input
+                  type="radio"
+                  value="floor__4"
+                  id="section_4"
+                  name="section-group"
+                />
+                <label for="section_4" class="section__title">
+                  <div class="section__block_1">
+                    <h5>4 блок секция</h5>
+                    <img src="../img/arrow__right.svg" alt="arrow " />
+                  </div>
+                  <div class="section__block_2">
+                    <p class="section__counter counter__saled">5</p>
+                    <p class="section__counter counter__paid-reservation">23</p>
+                    <p class="section__counter counter__verbal-reservation">
+                      4
+                    </p>
+                    <p class="section__counter counter__on-sale">12</p>
+                  </div>
+                </label>
+
+                <input
+                  type="radio"
+                  value="floor__3"
+                  id="section_3"
+                  name="section-group"
+                />
+                <label for="section_3" class="section__title">
+                  <div class="section__block_1">
+                    <h5>3 блок секция</h5>
+                    <img src="../img/arrow__right.svg" alt="arrow " />
+                  </div>
+                  <div class="section__block_2">
+                    <p class="section__counter counter__saled">5</p>
+                    <p class="section__counter counter__paid-reservation">23</p>
+                    <p class="section__counter counter__verbal-reservation">
+                      4
+                    </p>
+                    <p class="section__counter counter__on-sale">12</p>
+                  </div>
+                </label>
+
+                <input
+                  type="radio"
+                  value="floor__2"
+                  id="section_2"
+                  name="section-group"
+                />
+                <label for="section_2" class="section__title">
+                  <div class="section__block_1">
+                    <h5>2 блок секция</h5>
+                    <img src="../img/arrow__right.svg" alt="arrow " />
+                  </div>
+                  <div class="section__block_2">
+                    <p class="section__counter counter__saled">5</p>
+                    <p class="section__counter counter__paid-reservation">23</p>
+                    <p class="section__counter counter__verbal-reservation">
+                      4
+                    </p>
+                    <p class="section__counter counter__on-sale">12</p>
+                  </div>
+                </label>
+
+                <input
+                  type="radio"
+                  value="floor__1"
+                  id="section_1"
+                  name="section-group"
+                />
+                <label for="section_1" class="section__title">
+                  <div class="section__block_1">
+                    <h5>1 блок секция</h5>
+                    <img src="../img/arrow__right.svg" alt="arrow " />
+                  </div>
+                  <div class="section__block_2">
+                    <p class="section__counter counter__saled">5</p>
+                    <p class="section__counter counter__paid-reservation">23</p>
+                    <p class="section__counter counter__verbal-reservation">
+                      4
+                    </p>
+                    <p class="section__counter counter__on-sale">12</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="floor" id="floor__1">
+              <div class="tab">
+                <input type="checkbox" id="floor__1_tab6" name="tab-group" />
+                <label for="floor__1_tab6" class="tab-title">6 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__1_tab5" name="tab-group" />
+                <label for="floor__1_tab5" class="tab-title">5 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__1_tab4" name="tab-group" checked/>
+                <label for="floor__1_tab4" class="tab-title">4 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__1_tab3" name="tab-group" />
+                <label for="floor__1_tab3" class="tab-title">3 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__1_tab2" name="tab-group" />
+                <label for="floor__1_tab2" class="tab-title">2 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__1_tab1" name="tab-group" />
+                <label for="floor__1_tab1" class="tab-title">1 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="floor deactive" id="floor__2">
+              <div class="tab">
+                <input type="checkbox" id="floor__2_tab6" name="tab-group" />
+                <label for="floor__2_tab6" class="tab-title">6 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__2_tab5" name="tab-group" />
+                <label for="floor__2_tab5" class="tab-title">5 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__2_tab4" name="tab-group" />
+                <label for="floor__2_tab4" class="tab-title">4 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__2_tab3" name="tab-group" />
+                <label for="floor__2_tab3" class="tab-title">3 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__2_tab2" name="tab-group" />
+                <label for="floor__2_tab2" class="tab-title">2 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__2_tab1" name="tab-group" />
+                <label for="floor__2_tab1" class="tab-title">1 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="floor deactive" id="floor__3">
+              <div class="tab">
+                <input type="checkbox" id="floor__3_tab6" name="tab-group" />
+                <label for="floor__3_tab6" class="tab-title">6 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__3_tab5" name="tab-group" />
+                <label for="floor__3_tab5" class="tab-title">5 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__3_tab4" name="tab-group" />
+                <label for="floor__3_tab4" class="tab-title">4 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__3_tab3" name="tab-group" />
+                <label for="floor__3_tab3" class="tab-title">3 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__3_tab2" name="tab-group" />
+                <label for="floor__3_tab2" class="tab-title">2 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__3_tab1" name="tab-group" />
+                <label for="floor__3_tab1" class="tab-title">1 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="floor deactive" id="floor__4">
+              <div class="tab">
+                <input type="checkbox" id="floor__4_tab6" name="tab-group" />
+                <label for="floor__4_tab6" class="tab-title">6 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__4_tab5" name="tab-group" />
+                <label for="floor__4_tab5" class="tab-title">5 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__4_tab4" name="tab-group" />
+                <label for="floor__4_tab4" class="tab-title">4 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__4_tab3" name="tab-group" />
+                <label for="floor__4_tab3" class="tab-title">3 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__4_tab2" name="tab-group" />
+                <label for="floor__4_tab2" class="tab-title">2 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="floor__4_tab1" name="tab-group" />
+                <label for="floor__4_tab1" class="tab-title">1 этаж</label>
+                <table class="tab-content">
+                  <tr>
+                    <td class="saled">
+                      <p class="condition">Продано</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="on-sale">
+                      <p class="condition">В продаже</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="paid-reservation">
+                      <p class="condition">Платная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="verbal-reservation">
+                      <p class="condition">Устная бронь</p>
+                      <table class="tab__item">
+                        <tr class="tab__info first">
+                          <td>1А-3</td>
+                          <td>3 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>№66</td>
+                          <td>-</td>
+                        </tr>
+                        <tr class="tab__info">
+                          <td>ДДУ</td>
+                          <td>1 440 440</td>
+                        </tr>
+                        <tr>
+                          <td>39,45</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Таблица данных -->
+          <div class="filter objects__table deactive" id="objects__table">
+            <table>
+              <tr class="table__legend">
+                <td class="id-number">Номер</td>
+                <td class="plan">Планировка</td>
+                <td class="rooms">Комнаты</td>
+                <td class="area">Площадь</td>
+                <td class="adress">Адрес</td>
+                <td class="bs">БС</td>
+                <td class="floor">Этаж</td>
+                <td class="sale-type">Тип продажи</td>
+                <td class="stage">Этап</td>
+                <td class="price">Стоимость</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+              <tr>
+                <td class="id-number">4567</td>
+                <td class="plan">1Л4-34</td>
+                <td class="rooms">3</td>
+                <td class="area">87</td>
+                <td class="adress">ул. Интеранциональная, д. 78 , кв 7</td>
+                <td class="bs">7</td>
+                <td class="floor">6</td>
+                <td class="sale-type">Перепродажа</td>
+                <td class="stage">Продано</td>
+                <td class="price">6 787 789 Р</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__block">
+              <a href="#" class="footer__link">
+                <img
+                  class="footer__logo"
+                  src="../img/logo__footer.png"
+                  alt="smy-88"
+                />
+              </a>
+              <p class="footer__text">© 2021 «СМУ-88» Все права защищены.</p>
+            </div>
+            <a href="#" class="tech">Написать в техподдержку</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/objects.js"></script>
+  </body>
+</html>
